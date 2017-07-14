@@ -1,0 +1,35 @@
+//
+//  AllKindsDemo.pch
+//  AllKindsDemo
+//
+//  Created by kangjia on 2017/3/1.
+//  Copyright © 2017年 jim_kj. All rights reserved.
+//
+
+#ifndef AllKindsDemo_pch
+#define AllKindsDemo_pch
+
+#import "UIView+Extension.h"
+#import "BaseTableViewController.h"
+#import "PCCircleViewConst.h"
+
+#define screen_wid [[UIScreen mainScreen] bounds].size.width
+#define screen_height [[UIScreen mainScreen] bounds].size.height
+#define YFColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+
+#define iOS7 [[[UIDevice currentDevice]systemVersion] floatValue] >= 7.0
+
+#define ALERT_TITLE @"提示"
+#define ALERT_CANCEL @"确定"
+#define SHOWALERT(__message,__self)   \
+{     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:ALERT_TITLE message:__message preferredStyle:UIAlertControllerStyleAlert];\
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:ALERT_CANCEL style:UIAlertActionStyleDefault handler:nil];\
+     [alertController addAction:okAction]; \
+ [__self presentViewController:alertController animated:YES completion:nil]; \
+} \
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* AllKindsDemo_pch */
