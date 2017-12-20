@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD096D171FEA573B00E7A3BC /* TouchIDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD096D161FEA573B00E7A3BC /* TouchIDVC.m */; };
+		BD1B63D51FB2F09F00D48119 /* another@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1B63D41FB2F09600D48119 /* another@2x.png */; };
+		BD1B63D61FB2F0A200D48119 /* another@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1B63D31FB2F09600D48119 /* another@3x.png */; };
 		BD3A93B81E6C376E0002AC84 /* YFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3A93B31E6C376E0002AC84 /* YFLabel.m */; };
 		BD3A93B91E6C376E0002AC84 /* YFLittleProjectVC03.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3A93B51E6C376E0002AC84 /* YFLittleProjectVC03.m */; };
 		BD3A93BA1E6C376E0002AC84 /* YFRecordData.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3A93B71E6C376E0002AC84 /* YFRecordData.m */; };
@@ -15,6 +18,7 @@
 		BD46F6BD1EEFE4B90045C97E /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BD46F6BC1EEFE4B90045C97E /* libstdc++.6.0.9.tbd */; };
 		BD46F6BF1EEFE4CB0045C97E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD46F6BE1EEFE4CB0045C97E /* CoreImage.framework */; };
 		BD46F6C11EEFE6360045C97E /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = BD46F6C01EEFE6360045C97E /* tessdata */; };
+		BD8002941FAC56F200035D62 /* WordAniVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8002931FAC56F200035D62 /* WordAniVC.m */; };
 		BD8B255F1F0633B400150770 /* CyclicCardFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8B255E1F0633B400150770 /* CyclicCardFlowLayout.m */; };
 		BD8B25621F0A255E00150770 /* CyclicCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8B25611F0A255E00150770 /* CyclicCardCell.m */; };
 		BD8B25651F0CC25A00150770 /* CyclicCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8B25641F0CC25A00150770 /* CyclicCardVC.m */; };
@@ -44,6 +48,8 @@
 		BDE207EC1ECED1020056EE62 /* EqualSpaceFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE207E81ECED1020056EE62 /* EqualSpaceFlowLayout.m */; };
 		BDE207ED1ECED1020056EE62 /* ItemData.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE207EA1ECED1020056EE62 /* ItemData.m */; };
 		BDE207F01ECED11F0056EE62 /* CollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE207EF1ECED11F0056EE62 /* CollectionVC.m */; };
+		BDF4C3471FB2E3170059A0B9 /* ChangeAppIconVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF4C3461FB2E3170059A0B9 /* ChangeAppIconVC.m */; };
+		BDF4C34A1FB2E4790059A0B9 /* UIViewController+Present.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF4C3491FB2E4790059A0B9 /* UIViewController+Present.m */; };
 		BDF516221EC442C5008EC45D /* LabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF516151EC442C5008EC45D /* LabelViewController.m */; };
 		BDF516231EC442C5008EC45D /* RQShineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF516181EC442C5008EC45D /* RQShineLabel.m */; };
 		BDF516241EC442C5008EC45D /* YFShineLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF5161A1EC442C5008EC45D /* YFShineLabelViewController.m */; };
@@ -61,6 +67,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD096D151FEA573B00E7A3BC /* TouchIDVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchIDVC.h; sourceTree = "<group>"; };
+		BD096D161FEA573B00E7A3BC /* TouchIDVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchIDVC.m; sourceTree = "<group>"; };
+		BD1B63D31FB2F09600D48119 /* another@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "another@3x.png"; sourceTree = "<group>"; };
+		BD1B63D41FB2F09600D48119 /* another@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "another@2x.png"; sourceTree = "<group>"; };
 		BD3A93B21E6C376E0002AC84 /* YFLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLabel.h; sourceTree = "<group>"; };
 		BD3A93B31E6C376E0002AC84 /* YFLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLabel.m; sourceTree = "<group>"; };
 		BD3A93B41E6C376E0002AC84 /* YFLittleProjectVC03.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLittleProjectVC03.h; sourceTree = "<group>"; };
@@ -73,6 +83,8 @@
 		BD46F6BC1EEFE4B90045C97E /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		BD46F6BE1EEFE4CB0045C97E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		BD46F6C01EEFE6360045C97E /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		BD8002921FAC56F200035D62 /* WordAniVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordAniVC.h; sourceTree = "<group>"; };
+		BD8002931FAC56F200035D62 /* WordAniVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordAniVC.m; sourceTree = "<group>"; };
 		BD8B255D1F0633B400150770 /* CyclicCardFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyclicCardFlowLayout.h; sourceTree = "<group>"; };
 		BD8B255E1F0633B400150770 /* CyclicCardFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CyclicCardFlowLayout.m; sourceTree = "<group>"; };
 		BD8B25601F0A255E00150770 /* CyclicCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyclicCardCell.h; sourceTree = "<group>"; };
@@ -119,6 +131,10 @@
 		BDE207EA1ECED1020056EE62 /* ItemData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemData.m; sourceTree = "<group>"; };
 		BDE207EE1ECED11F0056EE62 /* CollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionVC.h; sourceTree = "<group>"; };
 		BDE207EF1ECED11F0056EE62 /* CollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionVC.m; sourceTree = "<group>"; };
+		BDF4C3451FB2E3170059A0B9 /* ChangeAppIconVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeAppIconVC.h; sourceTree = "<group>"; };
+		BDF4C3461FB2E3170059A0B9 /* ChangeAppIconVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeAppIconVC.m; sourceTree = "<group>"; };
+		BDF4C3481FB2E4790059A0B9 /* UIViewController+Present.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Present.h"; sourceTree = "<group>"; };
+		BDF4C3491FB2E4790059A0B9 /* UIViewController+Present.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Present.m"; sourceTree = "<group>"; };
 		BDF516141EC442C5008EC45D /* LabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelViewController.h; sourceTree = "<group>"; };
 		BDF516151EC442C5008EC45D /* LabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelViewController.m; sourceTree = "<group>"; };
 		BDF516171EC442C5008EC45D /* RQShineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RQShineLabel.h; sourceTree = "<group>"; };
@@ -176,6 +192,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD096D111FEA503B00E7A3BC /* 11-指纹识别 */ = {
+			isa = PBXGroup;
+			children = (
+				BD096D151FEA573B00E7A3BC /* TouchIDVC.h */,
+				BD096D161FEA573B00E7A3BC /* TouchIDVC.m */,
+			);
+			path = "11-指纹识别";
+			sourceTree = "<group>";
+		};
 		BD3A93B11E6C376E0002AC84 /* 03 - 2048 */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +222,15 @@
 				BD46F6BA1EEFD9700045C97E /* OCAndJS.m */,
 			);
 			path = "07-OC和JS交互";
+			sourceTree = "<group>";
+		};
+		BD8002911FAC563600035D62 /* 09-文字路径动画 */ = {
+			isa = PBXGroup;
+			children = (
+				BD8002921FAC56F200035D62 /* WordAniVC.h */,
+				BD8002931FAC56F200035D62 /* WordAniVC.m */,
+			);
+			path = "09-文字路径动画";
 			sourceTree = "<group>";
 		};
 		BD8B255C1F06318A00150770 /* 08-无限轮播 */ = {
@@ -253,6 +287,9 @@
 				BDE207E41ECED1020056EE62 /* 06-EqualSpaceFlowLayout */,
 				BD46F6B61EEFD9340045C97E /* 07-OC和JS交互 */,
 				BD8B255C1F06318A00150770 /* 08-无限轮播 */,
+				BD8002911FAC563600035D62 /* 09-文字路径动画 */,
+				BDF4C3441FB2E2F60059A0B9 /* 10-切换app图标 */,
+				BD096D111FEA503B00E7A3BC /* 11-指纹识别 */,
 				BDDD67B11E66BE44009E7B34 /* Category */,
 				BDDD66F11E66B73C009E7B34 /* Main */,
 				BDDD66E21E66B277009E7B34 /* Assets.xcassets */,
@@ -266,6 +303,8 @@
 		BDDD66D61E66B277009E7B34 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BD1B63D41FB2F09600D48119 /* another@2x.png */,
+				BD1B63D31FB2F09600D48119 /* another@3x.png */,
 				BD46F6C01EEFE6360045C97E /* tessdata */,
 				BDDD66D71E66B277009E7B34 /* main.m */,
 				BDDD67B01E66BD56009E7B34 /* AllKindsDemo.pch */,
@@ -313,6 +352,8 @@
 			children = (
 				BDDD67B21E66BE44009E7B34 /* UIView+Extension.h */,
 				BDDD67B31E66BE44009E7B34 /* UIView+Extension.m */,
+				BDF4C3481FB2E4790059A0B9 /* UIViewController+Present.h */,
+				BDF4C3491FB2E4790059A0B9 /* UIViewController+Present.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -330,6 +371,15 @@
 				BDE207EF1ECED11F0056EE62 /* CollectionVC.m */,
 			);
 			path = "06-EqualSpaceFlowLayout";
+			sourceTree = "<group>";
+		};
+		BDF4C3441FB2E2F60059A0B9 /* 10-切换app图标 */ = {
+			isa = PBXGroup;
+			children = (
+				BDF4C3451FB2E3170059A0B9 /* ChangeAppIconVC.h */,
+				BDF4C3461FB2E3170059A0B9 /* ChangeAppIconVC.m */,
+			);
+			path = "10-切换app图标";
 			sourceTree = "<group>";
 		};
 		BDF516131EC442C5008EC45D /* 01-Label */ = {
@@ -465,9 +515,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD46F6B81EEFD9340045C97E /* index.html in Resources */,
+				BD1B63D61FB2F0A200D48119 /* another@3x.png in Resources */,
 				BD46F6C11EEFE6360045C97E /* tessdata in Resources */,
 				BDDD66E61E66B277009E7B34 /* LaunchScreen.storyboard in Resources */,
 				BDDD66E31E66B277009E7B34 /* Assets.xcassets in Resources */,
+				BD1B63D51FB2F09F00D48119 /* another@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,7 +535,10 @@
 				BD8B255F1F0633B400150770 /* CyclicCardFlowLayout.m in Sources */,
 				BD3A93BA1E6C376E0002AC84 /* YFRecordData.m in Sources */,
 				BD3A93B81E6C376E0002AC84 /* YFLabel.m in Sources */,
+				BD8002941FAC56F200035D62 /* WordAniVC.m in Sources */,
+				BDF4C34A1FB2E4790059A0B9 /* UIViewController+Present.m in Sources */,
 				BDD2A2AF1EC3102000ACCFA9 /* UIButton+Bubbling.m in Sources */,
+				BD096D171FEA573B00E7A3BC /* TouchIDVC.m in Sources */,
 				BDF5163A1EC44354008EC45D /* PCCircleInfoView.m in Sources */,
 				BDD2A2B01EC3102000ACCFA9 /* UIView+Boom.m in Sources */,
 				BD3A93B91E6C376E0002AC84 /* YFLittleProjectVC03.m in Sources */,
@@ -496,6 +551,7 @@
 				BDF5163B1EC44354008EC45D /* PCCircleView.m in Sources */,
 				BDF5163D1EC44354008EC45D /* PCLockLabel.m in Sources */,
 				BDF516231EC442C5008EC45D /* RQShineLabel.m in Sources */,
+				BDF4C3471FB2E3170059A0B9 /* ChangeAppIconVC.m in Sources */,
 				BDDD66D81E66B277009E7B34 /* main.m in Sources */,
 				BD8B25651F0CC25A00150770 /* CyclicCardVC.m in Sources */,
 				BDF516381EC44354008EC45D /* GestureViewController.m in Sources */,

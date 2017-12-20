@@ -14,6 +14,17 @@
 
 @implementation HomeViewController
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    if (@available(iOS 11.0, *)) {
+        self.navigationController.navigationBar.prefersLargeTitles = false;
+        self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeNever;
+    } else {
+        
+    }
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -25,7 +36,11 @@
                     @"OCR识别",
                     @"自定义collection",
                     @"OC-JS交互",
-                    @"无限轮播"];
+                    @"无限轮播",
+                    @"文字路径动画",
+                    @"切换app图标",
+                    @"验证指纹识别"
+                    ];
     
     
     self.classNames = @[@"LabelViewController",
@@ -35,7 +50,11 @@
                         @"OCRViewController",
                         @"CollectionVC",
                         @"OCAndJS",
-                        @"CyclicCardVC"];
+                        @"CyclicCardVC",
+                        @"WordAniVC",
+                        @"ChangeAppIconVC",
+                        @"TouchIDVC"
+                        ];
     
 }
 
