@@ -522,7 +522,7 @@
 				TargetAttributes = {
 					BDDD66D21E66B277009E7B34 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 76LDYPQ5AW;
+						DevelopmentTeam = 3M697X5S5G;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -722,13 +722,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LIBRARY = "compiler-default";
-				DEVELOPMENT_TEAM = 76LDYPQ5AW;
+				DEVELOPMENT_TEAM = 3M697X5S5G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/jiakang/Desktop/AllKindsDemo/AllKindsDemo/AllKindsDemo.pch;
+				GCC_PREFIX_HEADER = "/Users/jiakang/Desktop/项目/AllKindsDemo/AllKindsDemo/AllKindsDemo.pch";
 				INFOPLIST_FILE = AllKindsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-lstdc++";
@@ -742,13 +742,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LIBRARY = "compiler-default";
-				DEVELOPMENT_TEAM = 76LDYPQ5AW;
+				DEVELOPMENT_TEAM = 3M697X5S5G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/jiakang/Desktop/AllKindsDemo/AllKindsDemo/AllKindsDemo.pch;
+				GCC_PREFIX_HEADER = "/Users/jiakang/Desktop/项目/AllKindsDemo/AllKindsDemo/AllKindsDemo.pch";
 				INFOPLIST_FILE = AllKindsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-lstdc++";
