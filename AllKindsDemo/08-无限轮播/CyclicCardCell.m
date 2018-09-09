@@ -28,7 +28,7 @@
     if (self) {
         self.contentView.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:102.0/255.0 blue:102.0/255.0 alpha:1.0];//(red: 102.0/255.0, green: 102.0/255.0, blue: 102.0/255.0, alpha: 1.0
         self.contentView.layer.masksToBounds = YES;
-        self.contentView.layer.cornerRadius = 5.0;
+        self.contentView.layer.cornerRadius = 10.0;
         [self.contentView addSubview:self.cardimage];
         [self.contentView addSubview:self.cardtitle];
         self.cardtitle.frame = CGRectMake(0, self.cardimage.frame.origin.y +self.cardimage.frame.size.height, self.cardimage.frame.size.width, self.bounds.size.height - self.cardimage.frame.origin.y - self.cardimage.frame.size.height);

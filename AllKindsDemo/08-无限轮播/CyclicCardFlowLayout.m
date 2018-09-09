@@ -23,6 +23,7 @@
     NSArray *array = [super layoutAttributesForElementsInRect:targetRect];
     CGFloat horizontalCenterX = proposedContentOffset.x + (self.collectionView.bounds.size.width/2);
     CGFloat offsetAdjustment = CGFLOAT_MAX;
+    
     for (UICollectionViewLayoutAttributes *layoutAttributes in array) {
         CGFloat itemHorizontalCenterX = layoutAttributes.center.x;
         if(fabs(itemHorizontalCenterX-horizontalCenterX) < fabs(offsetAdjustment)){
@@ -31,12 +32,12 @@
     }
     
     
-    return CGPointMake(proposedContentOffset.x, proposedContentOffset.y);
+    return CGPointMake(proposedContentOffset.x+offsetAdjustment, proposedContentOffset.y);
 }
 -(NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect{
     
-    ActiveDistance = 400.00;
-    ScaleFactor = 0.25;
+    ActiveDistance = screen_height*(410.00/667.00);
+    ScaleFactor = 0.21;
     NSArray *array = [super layoutAttributesForElementsInRect:rect];
     CGRect visibleRect = CGRectMake(self.collectionView.contentOffset.x, self.collectionView.contentOffset.y, self.collectionView.bounds.size.width, self.collectionView.bounds.size.height);
     

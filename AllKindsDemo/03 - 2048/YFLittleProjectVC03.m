@@ -62,7 +62,6 @@
     return _chesses;
 }
 
-
 - (void)viewDidLoad{
     
     _maxScore = 20;

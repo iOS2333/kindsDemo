@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSString *str = [[NSBundle mainBundle] pathForResource:@"Info.plist" ofType:nil];
+    NSDictionary *dic = [[NSDictionary alloc]initWithContentsOfFile:str];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     HomeViewController *homeVC = [[HomeViewController alloc] init];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:homeVC];

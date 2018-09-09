@@ -7,7 +7,6 @@
 //
 
 #import "CollectionVC.h"
-
 #import "EqualSpaceFlowLayout.h"
 #import "ItemData.h"
 #import "CustomCollectionViewCell.h"
@@ -23,27 +22,34 @@
     EqualSpaceFlowLayout *flowLayout = [[EqualSpaceFlowLayout alloc] init];
     flowLayout.delegate = self;
     
-    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, screen_wid, screen_height-64) collectionViewLayout:flowLayout];
-    self.collectionView.backgroundColor = [UIColor lightGrayColor];
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flowLayout];
+    self.collectionView.backgroundColor = [UIColor whiteColor];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     [self.view addSubview:self.collectionView];
     
     [self.collectionView registerClass:[CustomCollectionViewCell class] forCellWithReuseIdentifier:@"CellIdentifier"];
 }
-
+-(NSString *)randomStringWithLength:(NSInteger)len String:(NSString *)letters {
+    
+    NSMutableString *randomString = [NSMutableString stringWithCapacity: len];
+    
+    for (NSInteger i = 0; i < len; i++) {
+        [randomString appendFormat: @"%C", [letters characterAtIndex: arc4random_uniform((int)[letters length])]];
+    }
+    return randomString;
+}
 - (void)loadData
 {
+    UILabel *lb = [[UILabel alloc] init];
     self.dataArray = [[NSMutableArray alloc] init];
-    for (int i = 0; i < 23; i++) {
+    for (int i = 0; i < 100; i++) {
         ItemData *itemData = [[ItemData alloc] init];
-        itemData.content = [NSString stringWithFormat:@"%d",i];
-        if (i==0) {
-            itemData.size = CGSizeMake((screen_wid-1)/2,33);
-        }else{
-            itemData.size = CGSizeMake((screen_wid-1)/2,33);
-        }
-        
+        itemData.content = [self randomStringWithLength:arc4random()%5+3 String:@"dfsdsdfdsf"];
+        lb.font = [UIFont systemFontOfSize:16];
+        lb.text = itemData.content;
+        CGSize size = [lb sizeThatFits:CGSizeMake(CGFLOAT_MAX, 33)];
+        itemData.size = CGSizeMake(size.width,33);
         [self.dataArray addObject:itemData];
     }
 }
@@ -52,7 +58,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self loadData];
+    void (^printBLock)() =^(){
+        [self loadData];
+    };
+    printBLock();
+//    [self loadData];
     [self addContentView];
 }
 
@@ -94,21 +104,21 @@
     //    if (self.dataArray.count > 0) {
     //        [self.dataArray removeAllObjects];
     //    }
-    for (int i = 0; i < self.dataArray.count; i++) {
-        ItemData *itemData = [self.dataArray objectAtIndex:i];
-        itemData.content = [NSString stringWithFormat:@"%d",i];
-        if (i == indexPath.row && [cell.num integerValue] == indexPath.row) {
-            if (cell.frame.size.height == 67) {
-                itemData.size = CGSizeMake((screen_wid-1)/2,33);
-            }else{
-                itemData.size = CGSizeMake((screen_wid-1)/2,67);
-                
-            }
-        }else{
-            itemData.size = CGSizeMake((screen_wid-1)/2,33);
-        }
-    }
-    [collectionView reloadData];
+//    for (int i = 0; i < self.dataArray.count; i++) {
+//        ItemData *itemData = [self.dataArray objectAtIndex:i];
+//        itemData.content = [NSString stringWithFormat:@"%d",i];
+//        if (i == indexPath.row && [cell.num integerValue] == indexPath.row) {
+//            if (cell.frame.size.height == 67) {
+//                itemData.size = CGSizeMake((screen_wid-1)/2,33);
+//            }else{
+//                itemData.size = CGSizeMake((screen_wid-1)/2,67);
+//
+//            }
+//        }else{
+//            itemData.size = CGSizeMake((screen_wid-1)/2,33);
+//        }
+//    }
+//    [collectionView reloadData];
 }
 #pragma mark --UICollectionViewDelegateFlowLayout
 //定义每个UICollectionView 的大小

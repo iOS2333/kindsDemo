@@ -18,23 +18,25 @@
 
 @implementation BaseTableViewController
 -(void)viewWillAppear:(BOOL)animated{
+//    if (@available(iOS 11.0, *)) {
+//        self.navigationController.navigationBar.prefersLargeTitles = true;
+//        self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAlways;
+//        self.navigationController.navigationBar.largeTitleTextAttributes = @{NSForegroundColorAttributeName:[UIColor blackColor]};
+//    } else {
+//        
+//    }
     [super viewWillAppear:animated];
-    if (@available(iOS 11.0, *)) {
-        self.navigationController.navigationBar.prefersLargeTitles = true;
-        self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAlways;
-        self.navigationController.navigationBar.largeTitleTextAttributes = @{NSForegroundColorAttributeName:[UIColor blackColor]};
-    } else {
-        
-    }
+    
+//    self.navAlpha = @"0.0";
 
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-
+    self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"mainCellIdentifier"];
-
+    [self.tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
 
 //    [self.tableView animateTableView:AnimationDirection_top withDuration:0.0 withCompletion:^{
 //        [self.tableView animateTableViewCell:AnimationDirection_left withDuration:1 withCompletion:^{
@@ -45,7 +47,16 @@
 //    UITableViewCellSeparatorStyleSingleLine,
 //    UITableViewCellSeparatorStyleSingleLineEtched
 }
-
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+        if ([object isEqual:self.tableView] && [keyPath isEqualToString:@"contentOffset"]) {
+            CGFloat offset = self.tableView.contentOffset.y;
+            CGFloat delta = offset / 64.f + 1.f;
+            NSLog(@"%f",delta);
+//            delta = MAX(0, delta);
+            [self.navigationController setNeedsNavigationBackground:MAX(0,1-delta)];
+        }
+    
+}
 
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

@@ -18,6 +18,10 @@
 		BD46F6BD1EEFE4B90045C97E /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BD46F6BC1EEFE4B90045C97E /* libstdc++.6.0.9.tbd */; };
 		BD46F6BF1EEFE4CB0045C97E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD46F6BE1EEFE4CB0045C97E /* CoreImage.framework */; };
 		BD46F6C11EEFE6360045C97E /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = BD46F6C01EEFE6360045C97E /* tessdata */; };
+		BD4ABD8B20C7D6FD00B39268 /* NSObject+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4ABD8820C7D6FD00B39268 /* NSObject+Safe.m */; };
+		BD4ABD8C20C7D6FD00B39268 /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4ABD8A20C7D6FD00B39268 /* NullSafe.m */; };
+		BD4ABD8F20C7DF7400B39268 /* UIViewController+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4ABD8E20C7DF7400B39268 /* UIViewController+Alpha.m */; };
+		BD4ABD9220C7DFAF00B39268 /* UINavigationController+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4ABD9120C7DFAF00B39268 /* UINavigationController+Alpha.m */; };
 		BD8002941FAC56F200035D62 /* WordAniVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8002931FAC56F200035D62 /* WordAniVC.m */; };
 		BD8B255F1F0633B400150770 /* CyclicCardFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8B255E1F0633B400150770 /* CyclicCardFlowLayout.m */; };
 		BD8B25621F0A255E00150770 /* CyclicCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8B25611F0A255E00150770 /* CyclicCardCell.m */; };
@@ -25,6 +29,8 @@
 		BDD2A2AA1EC30AC900ACCFA9 /* ParticleSetVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD2A2A91EC30AC900ACCFA9 /* ParticleSetVCViewController.m */; };
 		BDD2A2AF1EC3102000ACCFA9 /* UIButton+Bubbling.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD2A2AB1EC3102000ACCFA9 /* UIButton+Bubbling.m */; };
 		BDD2A2B01EC3102000ACCFA9 /* UIView+Boom.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD2A2AE1EC3102000ACCFA9 /* UIView+Boom.m */; };
+		BDDD22EE206CC11400BA57C1 /* CyclicCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDD22ED206CC11400BA57C1 /* CyclicCardView.m */; };
+		BDDD22F1206CD21D00BA57C1 /* NSTimer+ScrollTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDD22F0206CD21D00BA57C1 /* NSTimer+ScrollTimer.m */; };
 		BDDD66D81E66B277009E7B34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDD66D71E66B277009E7B34 /* main.m */; };
 		BDDD66DB1E66B277009E7B34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDD66DA1E66B277009E7B34 /* AppDelegate.m */; };
 		BDDD66E31E66B277009E7B34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDD66E21E66B277009E7B34 /* Assets.xcassets */; };
@@ -83,6 +89,13 @@
 		BD46F6BC1EEFE4B90045C97E /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		BD46F6BE1EEFE4CB0045C97E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		BD46F6C01EEFE6360045C97E /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		BD4ABD8820C7D6FD00B39268 /* NSObject+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Safe.m"; sourceTree = "<group>"; };
+		BD4ABD8920C7D6FD00B39268 /* NSObject+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Safe.h"; sourceTree = "<group>"; };
+		BD4ABD8A20C7D6FD00B39268 /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
+		BD4ABD8D20C7DF7400B39268 /* UIViewController+Alpha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Alpha.h"; sourceTree = "<group>"; };
+		BD4ABD8E20C7DF7400B39268 /* UIViewController+Alpha.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Alpha.m"; sourceTree = "<group>"; };
+		BD4ABD9020C7DFAF00B39268 /* UINavigationController+Alpha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Alpha.h"; sourceTree = "<group>"; };
+		BD4ABD9120C7DFAF00B39268 /* UINavigationController+Alpha.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Alpha.m"; sourceTree = "<group>"; };
 		BD8002921FAC56F200035D62 /* WordAniVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordAniVC.h; sourceTree = "<group>"; };
 		BD8002931FAC56F200035D62 /* WordAniVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordAniVC.m; sourceTree = "<group>"; };
 		BD8B255D1F0633B400150770 /* CyclicCardFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyclicCardFlowLayout.h; sourceTree = "<group>"; };
@@ -97,6 +110,10 @@
 		BDD2A2AC1EC3102000ACCFA9 /* UIButton+Bubbling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Bubbling.h"; sourceTree = "<group>"; };
 		BDD2A2AD1EC3102000ACCFA9 /* UIView+Boom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Boom.h"; sourceTree = "<group>"; };
 		BDD2A2AE1EC3102000ACCFA9 /* UIView+Boom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Boom.m"; sourceTree = "<group>"; };
+		BDDD22EC206CC11400BA57C1 /* CyclicCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CyclicCardView.h; sourceTree = "<group>"; };
+		BDDD22ED206CC11400BA57C1 /* CyclicCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CyclicCardView.m; sourceTree = "<group>"; };
+		BDDD22EF206CD21D00BA57C1 /* NSTimer+ScrollTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+ScrollTimer.h"; sourceTree = "<group>"; };
+		BDDD22F0206CD21D00BA57C1 /* NSTimer+ScrollTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+ScrollTimer.m"; sourceTree = "<group>"; };
 		BDDD66D31E66B277009E7B34 /* AllKindsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllKindsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDD66D71E66B277009E7B34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BDDD66D91E66B277009E7B34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -224,6 +241,16 @@
 			path = "07-OC和JS交互";
 			sourceTree = "<group>";
 		};
+		BD4ABD8720C7D6FD00B39268 /* safe */ = {
+			isa = PBXGroup;
+			children = (
+				BD4ABD8820C7D6FD00B39268 /* NSObject+Safe.m */,
+				BD4ABD8920C7D6FD00B39268 /* NSObject+Safe.h */,
+				BD4ABD8A20C7D6FD00B39268 /* NullSafe.m */,
+			);
+			path = safe;
+			sourceTree = "<group>";
+		};
 		BD8002911FAC563600035D62 /* 09-文字路径动画 */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +269,8 @@
 				BD8B25611F0A255E00150770 /* CyclicCardCell.m */,
 				BD8B25631F0CC25A00150770 /* CyclicCardVC.h */,
 				BD8B25641F0CC25A00150770 /* CyclicCardVC.m */,
+				BDDD22EC206CC11400BA57C1 /* CyclicCardView.h */,
+				BDDD22ED206CC11400BA57C1 /* CyclicCardView.m */,
 			);
 			path = "08-无限轮播";
 			sourceTree = "<group>";
@@ -350,10 +379,17 @@
 		BDDD67B11E66BE44009E7B34 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				BD4ABD8720C7D6FD00B39268 /* safe */,
+				BDDD22EF206CD21D00BA57C1 /* NSTimer+ScrollTimer.h */,
+				BDDD22F0206CD21D00BA57C1 /* NSTimer+ScrollTimer.m */,
 				BDDD67B21E66BE44009E7B34 /* UIView+Extension.h */,
 				BDDD67B31E66BE44009E7B34 /* UIView+Extension.m */,
 				BDF4C3481FB2E4790059A0B9 /* UIViewController+Present.h */,
 				BDF4C3491FB2E4790059A0B9 /* UIViewController+Present.m */,
+				BD4ABD8D20C7DF7400B39268 /* UIViewController+Alpha.h */,
+				BD4ABD8E20C7DF7400B39268 /* UIViewController+Alpha.m */,
+				BD4ABD9020C7DFAF00B39268 /* UINavigationController+Alpha.h */,
+				BD4ABD9120C7DFAF00B39268 /* UINavigationController+Alpha.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -486,7 +522,7 @@
 				TargetAttributes = {
 					BDDD66D21E66B277009E7B34 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 6KYMLM2V9E;
+						DevelopmentTeam = 76LDYPQ5AW;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -537,15 +573,19 @@
 				BD3A93B81E6C376E0002AC84 /* YFLabel.m in Sources */,
 				BD8002941FAC56F200035D62 /* WordAniVC.m in Sources */,
 				BDF4C34A1FB2E4790059A0B9 /* UIViewController+Present.m in Sources */,
+				BD4ABD8C20C7D6FD00B39268 /* NullSafe.m in Sources */,
 				BDD2A2AF1EC3102000ACCFA9 /* UIButton+Bubbling.m in Sources */,
+				BDDD22EE206CC11400BA57C1 /* CyclicCardView.m in Sources */,
 				BD096D171FEA573B00E7A3BC /* TouchIDVC.m in Sources */,
 				BDF5163A1EC44354008EC45D /* PCCircleInfoView.m in Sources */,
 				BDD2A2B01EC3102000ACCFA9 /* UIView+Boom.m in Sources */,
 				BD3A93B91E6C376E0002AC84 /* YFLittleProjectVC03.m in Sources */,
+				BD4ABD9220C7DFAF00B39268 /* UINavigationController+Alpha.m in Sources */,
 				BDF516251EC442C5008EC45D /* SphereTagVC.m in Sources */,
 				BD8B25621F0A255E00150770 /* CyclicCardCell.m in Sources */,
 				BDE207ED1ECED1020056EE62 /* ItemData.m in Sources */,
 				BDE207EB1ECED1020056EE62 /* CustomCollectionViewCell.m in Sources */,
+				BD4ABD8F20C7DF7400B39268 /* UIViewController+Alpha.m in Sources */,
 				BDF516261EC442C5008EC45D /* SphereTagView.m in Sources */,
 				BDDD66EF1E66B577009E7B34 /* BaseTableViewController.m in Sources */,
 				BDF5163B1EC44354008EC45D /* PCCircleView.m in Sources */,
@@ -556,6 +596,8 @@
 				BD8B25651F0CC25A00150770 /* CyclicCardVC.m in Sources */,
 				BDF516381EC44354008EC45D /* GestureViewController.m in Sources */,
 				BDE207F01ECED11F0056EE62 /* CollectionVC.m in Sources */,
+				BDDD22F1206CD21D00BA57C1 /* NSTimer+ScrollTimer.m in Sources */,
+				BD4ABD8B20C7D6FD00B39268 /* NSObject+Safe.m in Sources */,
 				BD46F6BB1EEFD9700045C97E /* OCAndJS.m in Sources */,
 				BDF5163C1EC44354008EC45D /* PCCircleViewConst.m in Sources */,
 				BDF516431EC59D7F008EC45D /* OCRViewController.m in Sources */,
@@ -680,7 +722,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LIBRARY = "compiler-default";
-				DEVELOPMENT_TEAM = 6KYMLM2V9E;
+				DEVELOPMENT_TEAM = 76LDYPQ5AW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -700,7 +742,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LIBRARY = "compiler-default";
-				DEVELOPMENT_TEAM = 6KYMLM2V9E;
+				DEVELOPMENT_TEAM = 76LDYPQ5AW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

@@ -43,7 +43,6 @@
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    
     if (self.type == GestureViewControllerTypeLogin) {
         [self.navigationController setNavigationBarHidden:YES animated:animated];
     }

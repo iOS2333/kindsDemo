@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "UIView+Extension.h"
+#import "UIViewController+Alpha.h"
+#import "UINavigationController+Alpha.h"
 @interface BaseTableViewController : UITableViewController
 
 @property (nonatomic, strong) NSArray *titles;

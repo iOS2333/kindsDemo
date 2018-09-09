@@ -18,7 +18,7 @@
     if (self = [super init]) {
         self.scrollDirection = UICollectionViewScrollDirectionVertical;
         self.minimumInteritemSpacing = 1;
-        self.minimumLineSpacing = 1;
+        self.minimumLineSpacing = 30;
         self.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
         
     }
@@ -33,9 +33,9 @@
     
     NSInteger itemCount = [[self collectionView] numberOfItemsInSection:0];
     self.itemAttributes = [NSMutableArray arrayWithCapacity:itemCount];
-    CGFloat hh = 33;
-    BOOL isone = YES;
-    BOOL issingle = YES;
+//    BOOL isone = YES;
+//    BOOL issingle = YES;
+    CGFloat tempSize = 0;
     CGFloat yOffset = self.sectionInset.top;
     CGFloat xOffset = self.sectionInset.left;
     CGFloat yNextOffset = self.sectionInset.top;
@@ -45,33 +45,45 @@
         NSIndexPath *indexPath = [NSIndexPath indexPathForItem:idx inSection:0];
         CGSize itemSize = [self.delegate collectionView:self.collectionView layout:self sizeForItemAtIndexPath:indexPath];
         
-    
+        UICollectionViewLayoutAttributes *layoutAttributes =
+        [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
         
+//        layoutAttributes.frame = CGRectMake(xOffset+(itemSize.width + self.minimumInteritemSpacing)*(idx%10), yOffset+(self.minimumLineSpacing + itemSize.height)*(idx/10), itemSize.width, itemSize.height);
         
-        if (issingle) {
-            issingle = NO;
+        [_itemAttributes addObject:layoutAttributes];
+       
+        
+        if (idx%10 == 0) {
             xOffset = self.sectionInset.left;
-            UICollectionViewLayoutAttributes *layoutAttributes =
-            [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
-            
-            layoutAttributes.frame = CGRectMake(xOffset, yOffset, itemSize.width, itemSize.height);
-            [_itemAttributes addObject:layoutAttributes];
-            yOffset += (self.minimumLineSpacing + itemSize.height);
-            
         }else{
-            issingle = YES;
-            xOffset = (itemSize.width + self.minimumInteritemSpacing)+self.sectionInset.left;
-            UICollectionViewLayoutAttributes *layoutAttributes =
-            [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
-            
-            layoutAttributes.frame = CGRectMake(xOffset, yNextOffset, itemSize.width, itemSize.height);
-                        [_itemAttributes addObject:layoutAttributes];
-            yNextOffset += (self.minimumLineSpacing + itemSize.height);
-            
+            xOffset += (tempSize + self.minimumInteritemSpacing);
         }
         
+        layoutAttributes.frame = CGRectMake(xOffset, yOffset+(self.minimumLineSpacing + itemSize.height)*(idx/10), itemSize.width, itemSize.height);
         
-        
+        tempSize = itemSize.width;
+
+//        if (issingle) {
+//            issingle = NO;
+//            xOffset = self.sectionInset.left;
+//            UICollectionViewLayoutAttributes *layoutAttributes =
+//            [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
+//
+//            layoutAttributes.frame = CGRectMake(xOffset, yOffset, itemSize.width, itemSize.height);
+//            [_itemAttributes addObject:layoutAttributes];
+//            yOffset += (self.minimumLineSpacing + itemSize.height);
+//
+//        }else{
+//            issingle = YES;
+//            xOffset = (itemSize.width + self.minimumInteritemSpacing)+self.sectionInset.left;
+//            UICollectionViewLayoutAttributes *layoutAttributes =
+//            [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
+//
+//            layoutAttributes.frame = CGRectMake(xOffset, yNextOffset, itemSize.width, itemSize.height);
+//                        [_itemAttributes addObject:layoutAttributes];
+//            yNextOffset += (self.minimumLineSpacing + itemSize.height);
+//
+//        }
         
         
         if (idx == itemCount - 1) {
@@ -79,7 +91,7 @@
             contentsize_y = yOffset>yNextOffset?yOffset:yNextOffset;
             
         }
-          }
+    }
     self.collectionView.contentSize = CGSizeMake(contentsize_x, contentsize_y);
     
 }

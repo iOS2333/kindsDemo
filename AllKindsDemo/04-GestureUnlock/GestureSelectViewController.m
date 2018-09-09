@@ -37,6 +37,7 @@
     
     
 }
+
 - (void)btnClick:(UIButton *)sender{
     switch (sender.tag) {
         case 100:

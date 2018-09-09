@@ -37,12 +37,14 @@
 @end
 
 @implementation ParticleSetVCViewController
-
+-(void)viewWillAppear:(BOOL)animated{
+    self.navAlpha = @"0.0";
+    [super viewWillAppear:animated];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     name_arr = @[@"粒子掉落",@"烟花效果",@"礼物冒泡",@"雪花飘落"];
-    
     NSInteger grain_h = 0;
     NSInteger grain_x = (screen_wid - name_arr.count *60)/(name_arr.count+1);
     NSInteger xx = grain_x;
